@@ -10,10 +10,6 @@ $(function () {
       $(chosenCell).css('background-color', '#000080')
     }
   }
-  //
-  // function colorChange (chosenCell) {
-  //   $(chosenCell).css('background-color', '#4D72B2')
-  // }
 
   function announce () {
     if (whoWon() === 3) {
@@ -38,7 +34,6 @@ $(function () {
 
   function wrapper (chosenCell, index) {
     mark($(chosenCell))
-    // colorChange(chosenCell)
     playTurn(index)
     isGameOver()
     announce()
