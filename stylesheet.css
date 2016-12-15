@@ -7,18 +7,18 @@
 }
 
 body {
-  background-color: #FED888;
+  background-color: #EDEFEC;
 }
 
 h1 {
   margin: 18px 0;
   font-size: 24px;
   font-weight: 900;
-  color: #4D72B2;
+  color: #696969;
 }
 
 p {
-  color: #FED888;
+  color: #EDEFEC;
   line-height: 150px;
   font-size: 48px;
 }
@@ -35,7 +35,7 @@ p {
   margin: 3px 3px 0 3px;
   height: 150px;
   width: 150px;
-  background-color: #183465;
+  background-color: #e2e2e2;
 }
 
 .click {
@@ -53,7 +53,7 @@ p {
 }
 
 .clicktext {
-  color: #4D72B2;
+  color: #696969;
   font-size: 14px;
   font-weight: 900;
   margin: 14px auto;
