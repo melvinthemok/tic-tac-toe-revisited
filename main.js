@@ -38,9 +38,6 @@ $(function () {
     isGameOver()
     announce()
   }
-  $('.cell').hover(function () {
-    $(this).css('cursor', 'pointer')
-  })
 
   $('#zero').on('click', function () {
     if (isGameOver() === false) {
