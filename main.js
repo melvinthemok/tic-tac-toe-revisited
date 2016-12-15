@@ -100,7 +100,7 @@ $(function () {
     restart()
     $('.cell').css('background-color', '#e2e2e2')
     $('.cell p').remove()
-    $('.message h1').html('Who will go first?')
+    $('.message h1').html('Your move, X')
     $('.click h2').html('Restart')
   })
 })
