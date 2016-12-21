@@ -2,18 +2,20 @@ $(function () {
   function mark (chosenCell) {
     if (player === 1) {
       $(chosenCell).css('color', '#ffffff')
-      $(chosenCell).append('<p>X</p>')
+      $(chosenCell).append('<p>O</p>')
+      // only because playTurn(index) is called before mark(chosenCell)
       $(chosenCell).css('background-color', '#f88379')
     } else if (player === 2) {
       $(chosenCell).css('color', '#ffffff')
-      $(chosenCell).append('<p>O</p>')
+      $(chosenCell).append('<p>X</p>')
+      // only because playTurn(index) is called before mark(chosenCell)
       $(chosenCell).css('background-color', '#000080')
     }
   }
 
   function announce () {
     if (whoWon() === 3) {
-      $('.message h1').html('Equally matched')
+      $('.message h1').html('You\'re equally matched')
       $('.click h2').html('Another round?')
     } else if (isGameOver() === false) {
       if (player === 1) {
@@ -33,8 +35,8 @@ $(function () {
   }
 
   function wrapper (chosenCell, index) {
-    mark($(chosenCell))
     playTurn(index)
+    mark($(chosenCell))
     isGameOver()
     announce()
   }
